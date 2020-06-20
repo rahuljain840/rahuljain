@@ -14,10 +14,14 @@ const data = [
   { text: 'JavaScript', value: 650 },
   { text: 'HTML', value: 500 },
   { text: 'Jest', value: 400 },
+  { text: 'Lerna', value: 300 },
   { text: 'CSS', value: 200 },
+  { text: 'AMP', value: 160 },
+  { text: 'PWA', value: 140 },
   { text: 'VSCode', value: 120 },
   { text: 'Node', value: 88 },
   { text: 'React', value: 80 },
+  { text: 'Redux', value: 60 },
   { text: 'Nginx', value: 48 },
   { text: 'jQuery', value: 42 },
   { text: 'Bootstrap', value: 38 },
@@ -28,6 +32,7 @@ const data = [
   { text: 'Ubuntu', value: 22 },
   { text: 'AWS', value: 18 },
   { text: 'Webpack', value: 14 },
+  { text: 'browserify', value: 13 },
   { text: 'Babel', value: 12 },
   { text: 'Eslint', value: 11 },
 ]
@@ -71,8 +76,14 @@ const Home = ({ staticContext, t }) => {
                   className="fa fa-envelope-o"
                   aria-hidden="true"
                   id="send-message"
-                  onClick={() => scrollTo(document.body.scrollHeight - window.innerHeight, 250)}
+                  onClick={() => window.open("mailto:rahuljain840@gmail.com") }
                 />
+                &nbsp;
+                <a href="tel:+919654712280">
+                  <p style={{display: "inline"}}>
+                    <i className="fa fa-phone" aria-hidden="true" id="Contact" />
+                  </p>
+                </a>
               </h1>
               <p>{t('home.softwareEngineer')}</p>
             </Col>
@@ -130,6 +141,7 @@ const Home = ({ staticContext, t }) => {
               <p>Ubuntu</p>
               <p>DNS Config</p>
               <p>Nginx/SSL</p>
+              <p>Node.js</p>
               <p>MongoDB</p>
             </div>
           </Col>
@@ -137,12 +149,13 @@ const Home = ({ staticContext, t }) => {
             <div className="skill-icon">
               <i className="fa fa-cogs" aria-hidden="true" />
             </div>
-            <h3>Frameworks</h3>
+            <h3>Frameworks / Libraries</h3>
             <div className="skill-desc">
               <p>React</p>
               <p>Redux</p>
+              <p>AMP</p>
               <p>Angular 1.x</p>
-              <p>Node.js</p>
+              <p>ASP.NET MVC</p>
             </div>
           </Col>
           <Col className="skill" xs={11} sm={10} md={6} lg={5} xl={4}>
@@ -154,6 +167,18 @@ const Home = ({ staticContext, t }) => {
               <p>Google Drive</p>
               <p>Google Maps</p>
               <p>Facebook</p>
+            </div>
+          </Col>
+          <Col className="skill" xs={11} sm={10} md={6} lg={5} xl={4}>
+            <div className="skill-icon">
+              <i className="fa fa-heartbeat" aria-hidden="true" />
+            </div>
+            <h3>Monitoring</h3>
+            <div className="skill-desc">
+              <p>New Relic</p>
+              <p>Sentry</p>
+              <p>Segment</p>
+              <p>ELK</p>
             </div>
           </Col>
         </Row>
@@ -188,7 +213,7 @@ const Home = ({ staticContext, t }) => {
                 rel="noopener noreferrer"
                 className="container"
               >
-                <h2>Aagamdhara</h2>
+                <h2>Aagamdhara <p>Web/Android/iOS</p></h2>
                 <ul className="texts">
                   <li>Aagamdhara is a Dharmic app which is totally based on Jainism.</li>
                   <li>Aagamdhara is available on Android iOS and web</li>

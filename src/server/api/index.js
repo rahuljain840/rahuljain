@@ -1,7 +1,7 @@
 const express = require('express')
 const rateLimit = require('express-rate-limit')
 const { Message } = require('../models')
-// const { mailTransporter } = require('../../utils/nodemailer')
+const { mailTransporter } = require('../../utils/nodemailer')
 const { getRealIp } = require('../../utils/req-helpers')
 
 const router = express.Router()
@@ -25,9 +25,9 @@ router.post('/message', limiter, (req, res) => {
         .status(200)
         .json({})
         .end()
-      /*mailTransporter.sendMail(
+      mailTransporter.sendMail(
         {
-          from: 'Rahul Jain <rahuljain840@gmail.com>',
+          from: 'Rahul Jain <jain.rahul.0110@gmail.com>',
           to: 'Rahul Jain <rahuljain840@gmail.com>',
           replyTo: `${name} <${email}>`,
           subject,
@@ -39,17 +39,18 @@ router.post('/message', limiter, (req, res) => {
         },
         err => {
           if (err) {
-            return console.error(err)
+            return console.error('m.....', err)
           }
         }
-      )*/
+      )
     })
-    .catch(err =>
-      res
+    .catch(err => {
+      console.log('c.....', err);
+      return res
         .status(400)
         .json(err)
         .end()
-    )
+    })
 })
 
 module.exports = router
