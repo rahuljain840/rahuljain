@@ -4,7 +4,7 @@ const isProd = (typeof __PROD__ === 'boolean' && __PROD__) || process.env.NODE_E
 const CONSTANTS_MAP = {
   DEV_SERVER_URL: 'http://localhost:3001/',
   DEV_ROOT_URL: 'http://localhost:3000/',
-  PROD_ROOT_URL: 'https://rahuljain.work/',
+  PROD_ROOT_URL: 'http://rahuljain.work/',
   get ROOT_URL() {
     return isProd ? this.PROD_ROOT_URL : this.DEV_SERVER_URL
   },
