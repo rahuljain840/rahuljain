@@ -32,7 +32,7 @@ const Resume = () => (
           click here
         </a>
       </p>
-      <img src={`${ROOT_URL}public/images/Rahul-Resume.jpg`} alt="Rahul Resume" />
+      <img src={`${ROOT_URL}public/images/Rahul-Resume.png`} alt="Rahul Resume" />
     </Col>
   </Row>
 )
