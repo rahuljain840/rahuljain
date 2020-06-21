@@ -1,7 +1,7 @@
 {
   "name": "rahuljain-wp",
   "version": "0.0.1",
-  "description": "Source code for rahuljain.me",
+  "description": "Source code for rahuljain.work",
   "scripts": {
     "start": "npm-run-all --parallel server-watch client-watch nodemon",
     "build": "npm-run-all --sequential server-build client-build",

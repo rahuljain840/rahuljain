@@ -32,7 +32,7 @@ router.post('/message', limiter, (req, res) => {
           replyTo: `${name} <${email}>`,
           subject,
           html: `<article>
-          <h4>Here's a message from rahuljain.me contact form:</h4>
+          <h4>Here's a message from rahuljain.work contact form:</h4>
           <p>${content}</p>
           <p>From: ${name}<br />IP Address: ${ip}</p>
           </article>`,
