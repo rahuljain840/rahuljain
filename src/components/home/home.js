@@ -222,6 +222,17 @@ const Home = ({ staticContext, t }) => {
               </a>
             </Card>
           </Col>
+          <Col xs={22} sm={20} md={7} lg={6} xl={5}>
+            <Card style={{ width: '100%' }} bodyStyle={{ padding: 0 }}>
+              <a href="http://rahuljain.work" target="_blank" rel="noopener noreferrer" className="container">
+                <h2>rahuljain.work</h2>
+                <ul className="texts">
+                  <li>A React based portfolio to showcase your work.</li>
+                </ul>
+                <div className="overlay bg-3" />
+              </a>
+            </Card>
+          </Col>
         </Row>
       </div>
       <div id="contact">
